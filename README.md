@@ -5,7 +5,7 @@ This bot trades crypto in Coinbase Pro through the Coinbase Pro API. This bot is
 
 ## Run the bot:
 1. Download and install [NodeJS](https://nodejs.org/en/download/)
-2. Clone this repository to a location on your drive using git clone.
+2. Clone or download this repository to a location on your drive.
 3. Open a command line in the directory location of the project then type `npm install`
 4. Create an API key in CoinbasePro
     * Sign into coinbase pro (If you have a coinbase account the login for coinbase pro is the same) Click your profile icon in the top right corner then click the API option
