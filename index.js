@@ -34,6 +34,7 @@ function sleep(ms) {
     });
 }
 
+// Listens for price updates to the coin being traded
 function listenForPriceUpdates(productPair) {
     if (productPair == null) {
         throw new Error("Error in listenForPriceUpdates method. ProductPair is null!");
@@ -66,6 +67,7 @@ function listenForPriceUpdates(productPair) {
     });
 }
 
+// Loops trying to sell the current crypto position
 async function losePosition(balance, lastPeakPrice, lastValleyPrice, positionInfo, productInfo, tradingConfig) {
     try {
         while (positionInfo.positionExists === true) {
@@ -107,6 +109,7 @@ async function losePosition(balance, lastPeakPrice, lastValleyPrice, positionInf
     }
 }
 
+// Loops trying to buy a crypto position with USD
 async function gainPosition(balance, lastPeakPrice, lastValleyPrice, positionInfo, productInfo, tradingConfig) {
     try {
         while (positionInfo.positionExists === false) {
@@ -147,6 +150,7 @@ async function gainPosition(balance, lastPeakPrice, lastValleyPrice, positionInf
     }
 }
 
+// Gets profile information for trading
 async function getAccountIDs(productInfo) {
     try {
         let accountObject = {};
@@ -180,6 +184,7 @@ async function getAccountIDs(productInfo) {
     }
 }
 
+// Gets product pair information for the coin - usd combo
 async function getProductInfo(productInfo) {
     try {
         let quoteIncrementRoundValue = 0;
@@ -228,6 +233,7 @@ async function getProductInfo(productInfo) {
     }
 }
 
+// Returns highest fee between taker and maker for fee calculations
 async function returnHighestFee() {
     try {
         const feeResult = await coinbaseLibObject.getFees();
@@ -257,6 +263,7 @@ async function prompts() {
     return {coinToTrade, usdAmount};
 }
 
+// Begins trading
 async function momentumStrategyStart() {
     try {
         console.log("****************BOT STARTING****************");
