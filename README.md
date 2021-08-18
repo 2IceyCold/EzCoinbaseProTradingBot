@@ -7,7 +7,7 @@ This bot trades crypto in Coinbase Pro through the Coinbase Pro API. This bot is
 1. Download and install [NodeJS](https://nodejs.org/en/download/)
 2. Clone or download this repository to a location on your drive.
 3. Open a command line in the directory location of the project then type `npm install`
-4. Create an API key in CoinbasePro
+4. C[reate an API key in CoinbasePro](https://help.coinbase.com/en/pro/other-topics/api/how-do-i-create-an-api-key-for-coinbase-pro?__cf_chl_captcha_tk__=pmd_19dc505a9d85a6a65b86959b1bbe6ad00b86cdaf-1629330238-0-gqNtZGzNAzijcnBszQhO)
     * Sign into coinbase pro (If you have a coinbase account the login for coinbase pro is the same) Click your profile icon in the top right corner then click the API option
     * With the Default Portfolio selected in the API key menu, press the +New API Key button
     * Give it a name and enable the permissions
@@ -18,9 +18,6 @@ This bot trades crypto in Coinbase Pro through the Coinbase Pro API. This bot is
     * API_KEY=_COPYYOURKEYHERE_
     * API_SECRET=_COPYYOURAPISECRETHERE_
     * API_PASSPHRASE=_COPYYOURPASSPHRASEHERE_
-6. Make sure you have USD funds in your portfolio to begin trading (Note that many cryptos have a minimum order amount of around 10$), then type `node index.js` the program will prompt you to enter the crypto you want to trade and the amount of funds to trade with. You can enter any valid crypto ticker that is traded on coinbase pro. For example enter BTC then enter 15 to trade 15$ in bitcoin. Enter that information then it will begin trading! Simply leave it running as it adjusts and trades automatically.
+6. Make sure you have USD funds in your portfolio to begin trading (Note that many cryptos have a minimum order amount of around 10$). Then, in a console opened in the directory of the project type `node index.js` the program will prompt you to enter the crypto you want to trade and the amount of funds to trade with. You can enter any valid crypto ticker that is traded on coinbase pro. For example enter BTC then enter 15 to trade 15$ in bitcoin. Enter that information then it will begin trading! Simply leave it running as it adjusts and trades automatically.
 
-Feel free to reach out for help by posting in the discussion or issues on Github. Consider contributing to the project. If it helped you make some money consider donating BTC: bc1qeuptp9s9gppyt77amrzdt49mr6w3hlkw39cmla
-
-
-Happy Trading!
+Feel free to reach out for help by posting in the discussion or issues on Github. Consider contributing to the project. If it helped you make some money consider donating some BTC: bc1qeuptp9s9gppyt77amrzdt49mr6w3hlkw39cmla
